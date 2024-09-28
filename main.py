@@ -3,13 +3,11 @@ from student import StudentInfo
 from adds_student import AddStudent
 from open_studAcc import openACc
 from student_search import SearchStud
-from all_studentprint import allprint
 
 stu = StudentInfo()
 studAcc = openACc(stu)
 addstud = AddStudent(stu)
 search = SearchStud(stu)
-printallstud = allprint(stu)
 
 stu.setName('Camacho'), stu.setAge('20'), stu.setIdnum('2023-2-02449'), stu.setEmail('nat@gmail.com'), stu.setPhone('09560252200')
 addstud.add_student(stu.getName(), stu.getAge(), stu.getIdnum(), stu.getEmail(), stu.getPhone())
@@ -44,7 +42,7 @@ def studportal(idnum):
         studportal(stu.getIdnum()) if again == 'y' else print("\nThank you for using.")
 
     elif choice == "4": #view all
-        printallstud.printAllStudentInfo()
+        search.printAllStudentInfo()
         again = input("\nContinue? [y/n]\nChoice: ").lower()
         studportal(stu.getIdnum()) if again == 'y' else print("\nThank you for using.")
 
