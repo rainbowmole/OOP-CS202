@@ -1,3 +1,5 @@
+from adds_student import AddStudent
+
 class openACc:
     def __init__(self, student):
         self.student_data = student
@@ -6,6 +8,6 @@ class openACc:
         for student in  self.student_data.allstudents:
             if student.getIdnum() == idnum:
                 print(f"\nWelcome, {student.getName()}!")
-                return True
+                return student
         else:
             print("ID not found..."); return False

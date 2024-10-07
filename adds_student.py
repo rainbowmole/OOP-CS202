@@ -11,6 +11,12 @@ class AddStudent:
         student.setIdnum(idnum)
         student.setEmail(email)
         student.setPhone(phone)
+        
+        student.getName()
+        student.getAge()
+        student.getIdnum()
+        student.getEmail()
+        student.getPhone()
 
         self.student_data.allstudents.append(student)
         print(f'\nAdded student {name} to the list')
@@ -34,3 +40,6 @@ class AddStudent:
 
         self.student_data.allstudents.append(newstud)
         print(f'\nAdded student {name} to the list')
+
+    
+

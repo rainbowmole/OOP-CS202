@@ -16,4 +16,3 @@ class SearchStud:
         print("\n======== All Student's Information ========\n")
         for student in self.student_data.allstudents:
             print(student)
-    
